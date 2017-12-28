@@ -1,0 +1,121 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bootstrap JS</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	    <link rel="stylesheet" type="text/css" href="css/style.css">
+	    
+	</head>
+	<body>
+<!--TOP NAV-->
+	<section class="top-nav">
+		<ul class="nav nav-pills navbar-inverse navbar-fixed-top">
+			<li class="logo" role="presentation"><img src="http://kodilla.com/static/lessons/8.jpg" style="width:100px;height:50px;"></li>
+		    <li role="presentation" class="active"><a href="#">O mnie</a></li>
+		    <li role="presentation"><a href="#">Doświadczenie</a></li>
+		    <li role="presentation"><a href="#">Kontakt</a></li>
+		</ul>
+	</section>
+<!--CAROUSEL-->
+	<section class="carousel">
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		    <ol class="carousel-indicators">
+		        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+		        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+		    </ol>
+		    <div class="carousel-inner" role="listbox">
+		        <div class="item active">
+		            <img src="https://images.unsplash.com/photo-1508020268086-b96cf4f4bb2e?dpr=1&auto=compress,format&fit=crop&w=1950&h=&q=80&cs=tinysrgb&crop=">
+		        </div>
+		        <div class="item">
+		            <img src="https://images.unsplash.com/photo-1508022970540-4738bc94a4f1?dpr=1&auto=compress,format&fit=crop&w=1947&h=&q=80&cs=tinysrgb&crop=">
+		        </div>
+		        <div class="item">
+		            <img src="https://images.unsplash.com/photo-1508038770294-fe6a9724fd10?dpr=1&auto=compress,format&fit=crop&w=1780&h=&q=80&cs=tinysrgb&crop=">
+		        </div>
+		        <div class="item">
+		            <img src="https://images.unsplash.com/photo-1507936421721-82a7681c28a2?dpr=1&auto=compress,format&fit=crop&w=1950&h=&q=80&cs=tinysrgb&crop=">
+		        </div>
+		        <div class="item">
+		            <img src="https://images.unsplash.com/photo-1507992997513-5aa7c22c613f?dpr=1&auto=compress,format&fit=crop&w=1949&h=&q=80&cs=tinysrgb&crop=">
+		        </div>
+		    </div>
+		    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		        <span class="sr-only">Poprzedni</span>
+		    </a>
+		    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		        <span class="sr-only">Następny</span>
+		    </a>
+		</div>
+	</section>
+	<!--TABS-->
+	<section class="tabs">
+		<ul class="nav nav-tabs">
+			<li class="active"><a data-toggle="tab" href="#home">Aktualności</a></li>
+		  	<li><a data-toggle="tab" href="#menu1">Code</a></li>
+			 <li><a data-toggle="tab" href="#menu2">Doświadczenie</a></li>
+			 <li><a data-toggle="tab" href="#menu3">Hobby</a></li>
+		</ul>
+		<div class="tab-content">
+			<div id="home" class="tab-pane fade in active">
+			    <h3>Aktualności</h3>
+			    <p>Poszukuję pracy jako Junior Frontend developer</p>
+		  	</div>
+			<div id="menu1" class="tab-pane fade">
+				<h3>Coding</h3>
+				<p>HTML5</p>
+			    <p>CSS3</p>
+			    <p>JavaScript</p>
+			</div>
+			<div id="menu2" class="tab-pane fade">
+			    <h3>Doświadczenie</h3>
+			    <p>Kodilla 09-11.2017</p>
+			    <p>CodeCademy 07.2017</p>
+			    <p>Udemy 07.2017</p>
+			</div>
+			<div id="menu3" class="tab-pane fade">
+			    <h3>Hobby</h3>
+			    <p>Brazylijskie Jiu-jitsu</p>
+			    <p>Surfing</p>
+			    <p>Skateboarding</p>
+			    <p>Dog sports: agility, frissbe</p>
+			</div>
+		</div>
+	</section>
+	<!--MODALS-->
+	<section class="modals">
+		<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#exampleModal">Więcej o autorze
+		</button>
+		<div id="exampleModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+		    	<div class="modal-content">
+		      		<div class="modal-header">
+		         		<h4>Marcin Węgrzyn</h4>
+		       		</div>
+		       		<div class="modal-body">
+		       			<p>Początkujący Frontend Developer Warszawa Polska adres email: wegrzyn.marcin@icloud.com</p>
+		      		</div>
+		       		<div class="modal-footer">
+		       			<p>Co dalej?</p>
+		       			<button type="button" class="btn btn-success">Skontaktj się!</button>
+		         		<button type="button" class="btn btn-primary" data-dismiss="modal">Zamknij</button>
+		       		</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--SCRIPTS-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	</body>
+</html>
